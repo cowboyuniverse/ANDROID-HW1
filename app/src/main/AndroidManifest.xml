@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.application.newsapp">
 
-    <!--DONE TODO 7. 2pts: Set up permissions to use the internet in the manifest.-->
+    <!--//DONE HW1  TODO 7. 2pts: Set up permissions to use the internet in the manifest.-->
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
