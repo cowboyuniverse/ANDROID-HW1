@@ -8,27 +8,61 @@
     android:padding="20dp"
     tools:context="com.example.application.newsapp.MainActivity">
 
-
     <EditText
-        android:id="@+id/searchQuery"
+        android:id="@+id/refresh_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="8sp"
         android:hint="@string/hint"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"/>
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/error"-->
+        <!--android:textSize="22sp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="16dp"-->
+        <!--android:text="Error!!"-->
+        <!--android:visibility="invisible" />-->
+
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progressBar"-->
+        <!--style="?android:attr/progressBarStyle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="gone"/>-->
 
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
+        android:layout_width="42dp"
+        android:layout_gravity="center"
         android:visibility="gone"/>
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="match_parent">
         <TextView
-            android:id="@+id/displayJSON"
+            android:id="@+id/error"
+            android:textSize="18sp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Error!!"
+            android:visibility="invisible" />
     </ScrollView>
 
 </LinearLayout>
+
+
+    <!--// HW2 DONE TODO 3. 4pts: Add a RecyclerView to your activity's layout. Add a new layout for your list item. It should have a LinearLayout with three child TextViews, one for the news item title, one for the description, and one for the time.-->
+

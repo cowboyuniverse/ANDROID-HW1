@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="?attr/selectableItemBackground">
+
+    <TextView
+        android:paddingTop="8dp"
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:textColor="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:background="@android:color/holo_green_light"
+        android:textColor="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/urlToImage"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="14sp"/>-->
+
+    <!--<ImageView android:id="@+id/urlToImage"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_margin="10dip"/>-->
+
+    <TextView
+        android:id="@+id/publishedAt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"/>
+
+</LinearLayout>
+
+    <!--//    private String author;-->
+    <!--//    private String title;-->
+    <!--//    private String description;-->
+    <!--//    private String url;-->
+    <!--//    private String urlToImage;-->
+    <!--//    private String publishedAt;-->
