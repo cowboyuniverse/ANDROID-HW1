@@ -26,7 +26,7 @@ import static android.content.ContentValues.TAG;
 
     public class NetworkUtils {
         public static final String APIKEY="97635e7f96974c1b95b2f7a11c1b792b";
-        public static final String SOURCE ="source=the-next-web";
+        public static final String SOURCE ="source=the-verge";
         public static final String SORTBY = "latest";
         public static final String NEWSAPI_BASE_URL = "https://newsapi.org/v1/articles?"+ SOURCE + "&sortBy=" + SORTBY + "&apiKey=" + APIKEY;
         public static final String PARAM_QUERY = "q";
@@ -48,8 +48,6 @@ import static android.content.ContentValues.TAG;
 
         public static String getResponseFromHttpUrl(URL url) throws IOException {
             HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-
-
             try {
                 InputStream in = urlConnection.getInputStream();
 
