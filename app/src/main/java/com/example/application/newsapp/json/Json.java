@@ -18,6 +18,7 @@ public class Json {
         ArrayList<NewsItem> result = new ArrayList<>();
         JSONObject main = new JSONObject(json);
         JSONArray articles = main.getJSONArray("articles");
+        String source = main.getString("source");
 
         for(int i = 0; i < articles.length(); i++){
             JSONObject article = articles.getJSONObject(i);
@@ -27,7 +28,7 @@ public class Json {
             String url = article.getString("url");
             String urlToImage = article.getString("urlToImage");
             String publishedAt = article.getString("publishedAt");
-            NewsItem newsItems = new NewsItem(author, tiitle,description, url, urlToImage, publishedAt);
+            NewsItem newsItems = new NewsItem(source,author, tiitle,description, url, urlToImage, publishedAt);
             result.add(newsItems);
         }
         return result;

@@ -151,6 +151,31 @@ public class MainActivity extends AppCompatActivity {
 
 }
 
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+//     HW4 DONE TODO     1) 0pts: Finish Homework 2.
+//
+//     HW4 TODO     2) 10pts: Modify Homework 2 so that AsyncTask is replaced with AsyncTaskLoader, implementing all the required callbacks.
+//
+//     HW4 TODO     3) 10pts: Create a contract, subclass SQLiteOpenHelper, modify your app so that your network call stores the data for your news stories in the database (you decide column and table names).
+//
+//     HW4 TODO     4) 5pts: Modify your app so that the recyclerview loads from the database.
+//
+//     HW4 TODO     5) 10pts: Using Firebase's JobDispatcher, modify your app so that it loads new news information every minute.
+//
+//     HW4 TODO     6) 3pts: Have your activity check if the app has been installed before, if not, load data into your database using your network methods.
+//
+//     HW4 TODO     7) 2pts: In onCreate, have your activity load what's currently in your database into the recyclerview for display.
+//
+//     HW4 TODO      8) 5pts: Use Picasso to load a thumbnail for each news item in the recycler view.
+//
+//     HW4 TODO      For each major addition, comment about what you are doing in the appropriate place in your code. If you fail to do this, you may lose all your points.
+
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // DONE HW1 TODO 1. 2pts: Visit this site and look around a bit: https://newsapi.org/. Sign up and get your free api key.
 
 // DONE HW1 TODO 2. 2pts: Past this url: https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=   with your api key added to the end in a browser. Cut and paste the result into a text file and submit here. Do this before you demo your app.
