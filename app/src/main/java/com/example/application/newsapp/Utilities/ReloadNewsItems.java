@@ -20,7 +20,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 
-//loads info in the database from the api source
+//     Loads info in the database from the api source
+
 //     HW4 TODO     5) 10pts: Using Firebase's JobDispatcher, modify your app so that it loads new news information every minute.
 public class ReloadNewsItems {
     public static final String ACTION_REFRESH = "refresh";

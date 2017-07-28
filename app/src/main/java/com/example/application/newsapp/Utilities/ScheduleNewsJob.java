@@ -15,7 +15,8 @@ import com.firebase.jobdispatcher.Trigger;
  * Created by cowboyuniverse on 7/26/17.
  */
 
-// This will schedule a background job from Firebase's JobDispatcher.
+//     This will schedule a background job from Firebase's JobDispatcher.
+
 //     HW4 TODO     5) 10pts: Using Firebase's JobDispatcher, modify your app so that it loads new news information every minute.
 public class ScheduleNewsJob {
     private static final String NEWS_JOB_TAG = "news_job_tag";
@@ -40,7 +41,8 @@ public class ScheduleNewsJob {
 
 
 
-// Reference from marcs code
+//    Reference from marcs code
+
 //    private static final int SCHEDULE_INTERVAL_MINUTES = 360;
 //    private static final int SYNC_FLEXTIME_SECONDS = 60;
 //            .setTrigger(Trigger.executionWindow(SCHEDULE_INTERVAL_MINUTES,

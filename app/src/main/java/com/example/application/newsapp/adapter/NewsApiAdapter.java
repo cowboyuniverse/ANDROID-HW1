@@ -1,6 +1,5 @@
 package com.example.application.newsapp.adapter;
 
-
 import android.content.Context;
 import android.database.Cursor;
 import android.support.v7.widget.RecyclerView;
@@ -10,11 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.application.newsapp.database.Contract;
 import com.example.application.newsapp.model.NewsItem;
-import com.example.application.newsapp.NetworkUtils;
-import com.example.application.newsapp.json.Json;
 import com.example.application.newsapp.R;
 import com.squareup.picasso.Picasso;
 
@@ -26,7 +22,6 @@ import static java.util.Collections.addAll;
  * Created by cowboyuniverse on 6/28/17.
  */
 // HW2 DONE TODO 4. 6pts: Implement the RecyclerView's adapter, along with the Holder as an inner class. Set up the RecyclerView so that it displays, in each item, the item's title, description, and date (it doesn't have to be formatted, just put it in raw).
-
 
 
 //added cursor
@@ -68,7 +63,7 @@ public class NewsApiAdapter extends RecyclerView.Adapter<NewsApiAdapter.ItemHold
 
     }
 //    this method is in the api for adapter class
-//https://developer.android.com/reference/android/content/AsyncTaskLoader.html
+//    https://developer.android.com/reference/android/content/AsyncTaskLoader.html
     public void setData(ArrayList<NewsItem> data) {
         if (data != null) {
             addAll(data);
@@ -81,17 +76,6 @@ public class NewsApiAdapter extends RecyclerView.Adapter<NewsApiAdapter.ItemHold
             ItemHolder holder, int position) {
         holder.bind(position);
     }
-//    private String author;
-//    private String title;
-//    private String description;
-//    private String url;
-//    private String urlToImage;
-//    private String publishedAt;
-
-//    @Override
-//    public int getItemCount() {
-//        return data.size();
-//    }
 
     @Override
     public int getItemCount() {
@@ -104,7 +88,6 @@ public class NewsApiAdapter extends RecyclerView.Adapter<NewsApiAdapter.ItemHold
         TextView description;
         TextView url;
         ImageView urlToImage;
-//        TextView urlToImage;
         TextView publishedAt;
 
         ItemHolder(View view){
@@ -119,13 +102,6 @@ public class NewsApiAdapter extends RecyclerView.Adapter<NewsApiAdapter.ItemHold
         }
 
         public void bind(int pos){
-//            NewsItem items = data.get(pos);
-//            author.setText(items.getAuthor());
-//            title.setText(items.getTitle());
-//            description.setText(items.getDescription());
-//            url.setText(items.getUrl());
-//            publishedAt.setText(items.getPublishedAt());
-
             cursor.moveToPosition(pos);
             author.setText(cursor.getString(cursor.getColumnIndex(Contract.TABLE_ARTICLES.COLUMN_NAME_AUTHOR)));
             title.setText(cursor.getString(cursor.getColumnIndex(Contract.TABLE_ARTICLES.COLUMN_NAME_TITLE)));

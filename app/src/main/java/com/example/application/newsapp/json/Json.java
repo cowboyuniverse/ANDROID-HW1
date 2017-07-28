@@ -35,7 +35,7 @@ public class Json {
     }
 }
 
-
+//DATA FROM THE API AS A REFERENCE
 
 //        "author": "Bryan Clark",
 //        "title": "Drone fight club pits two quadcopters against one another for aerial supremacy",

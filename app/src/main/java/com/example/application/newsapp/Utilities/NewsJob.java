@@ -10,7 +10,7 @@ import com.firebase.jobdispatcher.JobService;
  * Created by cowboyuniverse on 7/26/17.
  */
 
-// updates from the dabaseta using AsyncTask to update the data from News API
+// updates from the database using AsyncTask to refresh the data from News API
 public class NewsJob extends JobService {
     AsyncTask mBackgroundTask;
 
@@ -33,10 +33,8 @@ public class NewsJob extends JobService {
             protected void onPostExecute(Object o) {
                 jobFinished(job, false);
                 super.onPostExecute(o);
-
             }
         };
-
 
         mBackgroundTask.execute();
 

@@ -13,7 +13,6 @@ import android.util.Log;
 // HW4 DONE TODO 3) 10pts: Create a contract, subclass SQLiteOpenHelper, modify your app so that your network call stores the data for your news stories in the database (you decide column and table names).
 
 public class DBHelper extends SQLiteOpenHelper {
-
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "articles.db";
     private static final String TAG = "dbhelper";
@@ -40,19 +39,9 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL(queryString);
     }
 
-
-
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("drop table " + Contract.TABLE_ARTICLES.TABLE_NAME + " if exists;");
     }
 }
 
-// contract
-//    public static final String TABLE_NAME = "articles";
-//    public static final String COLUMN_NAME_AUTHOR = "author";
-//    public static final String COLUMN_NAME_TITLE = "title";
-//    public static final String COLUMN_NAME_DESCRIPTION = "description";
-//    public static final String COLUMN_NAME_URL = "url";
-//    public static final String COLUMN_NAME_URL_TO_IMAGE = "urlToImage";
-//    public static final String OLUMN_NAME_PUBLISHED_AT = "publishedAt";
