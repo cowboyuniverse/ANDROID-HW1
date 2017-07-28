@@ -1,63 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:paddingLeft="2dp"
-    android:paddingRight="2dp"
-    android:paddingTop="10dp"
-    android:paddingBottom="10dp"
-    android:background="?attr/selectableItemBackground">
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal">
 
-    <TextView
-        android:paddingTop="8dp"
-        android:id="@+id/author"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="17sp"
-        android:background="@android:color/holo_green_light"
-        android:gravity="center"
-        android:textColor="#EEEEEE"/>
+    <LinearLayout
+        android:layout_width="192dp"
+        android:layout_height="135dp"
+        android:background="?attr/colorBackgroundFloating"
+        android:orientation="vertical"
+        tools:targetApi="@android:color/background_light"
+        android:layout_weight="0.00">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:background="@android:color/holo_green_light"
-        android:textColor="#EEEEEE"/>
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:textColor="#EEEEEE"
+            android:textSize="13sp" />
 
-    <TextView
-        android:id="@+id/url"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="11sp" />
 
-    <!--<TextView-->
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="6sp" />
+
+        <!--<TextView-->
         <!--android:id="@+id/urlToImage"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
         <!--android:textSize="14sp"/>-->
 
-    <!--<ImageView android:id="@+id/urlToImage"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_margin="10dip"/>-->
 
-    <TextView
-        android:id="@+id/publishedAt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/publishedAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight=".05">
+
+
+        <ImageView
+            android:id="@+id/urlToImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorBackgroundFloating"
+            android:src="@color/colorAccent" />
+
+    </FrameLayout>
 
 </LinearLayout>
-
     <!--//    private String author;-->
     <!--//    private String title;-->
     <!--//    private String description;-->

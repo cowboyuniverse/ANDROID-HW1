@@ -20,7 +20,6 @@ import static android.content.ContentValues.TAG;
  */
 
 //DONE HW1  TODO 4. 5pts: Create a new class called NetworkUtils. Define the appropriate base_url and query_parameter constants (make sure they are Java constants) here as static class members.
-
 //DONE HW1  TODO 5. 5pts: Create a static method in NetworkUtils that uses Uri.Builder to build the appropriate url, the url you used in (2), to return a completed Java URL.
 //DONE HW1  TODO 6. 2pts: Put this method in your NetworkUtils class:
 
@@ -31,29 +30,44 @@ import static android.content.ContentValues.TAG;
         public static final String NEWSAPI_BASE_URL = "https://newsapi.org/v1/articles?"+ SOURCE + "&sortBy=" + SORTBY + "&apiKey=" + APIKEY;
         public static final String PARAM_QUERY = "q";
 
-        public static URL makeURL(String searchQuery) {
-            Uri uri = Uri.parse(NEWSAPI_BASE_URL).buildUpon()
-                    .appendQueryParameter(PARAM_QUERY, searchQuery)
-                    .build();
-            URL url = null;
-            try {
-                String urlString = uri.toString();
-                Log.d(TAG, "url:" + urlString);
-                url = new URL(uri.toString());
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            }
-            return url;
+//    uses makeurl instead dof buildUrl
+
+//        public static URL makeURL(String searchQuery) {
+//            Uri uri = Uri.parse(NEWSAPI_BASE_URL).buildUpon()
+//                    .appendQueryParameter(PARAM_QUERY, searchQuery)
+//                    .build();
+//            URL url = null;
+//            try {
+//                String urlString = uri.toString();
+//                Log.d(TAG, "url:" + urlString);
+//                url = new URL(uri.toString());
+//            } catch (MalformedURLException e) {
+//                e.printStackTrace();
+//            }
+//            return url;
+//        }
+
+    public static URL makeURL() {
+        Uri uri = Uri.parse(NEWSAPI_BASE_URL).buildUpon()
+                .appendQueryParameter(PARAM_QUERY, APIKEY)
+                .build();
+        URL url = null;
+        try {
+            String urlString = uri.toString();
+            Log.d(TAG, "url:" + urlString);
+            url = new URL(uri.toString());
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
         }
+        return url;
+    }
 
         public static String getResponseFromHttpUrl(URL url) throws IOException {
             HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
             try {
                 InputStream in = urlConnection.getInputStream();
-
                 Scanner scanner = new Scanner(in);
                 scanner.useDelimiter("\\A");
-
                 boolean hasInput = scanner.hasNext();
                 if (hasInput) {
                     return scanner.next();

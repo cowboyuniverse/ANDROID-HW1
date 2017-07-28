@@ -1,11 +1,26 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="AppTheme" parent="AppTheme.Base"></style>
 </resources>
+
+<!--<resources>-->
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">#3F51B5</item>-->
+        <!--&lt;!&ndash; Light Indigo &ndash;&gt;-->
+        <!--<item name="colorPrimaryDark">#3949AB</item>-->
+        <!--&lt;!&ndash; Dark Indigo &ndash;&gt;-->
+        <!--<item name="colorAccent">#00B0FF</item>-->
+        <!--&lt;!&ndash; Blue &ndash;&gt;-->
+    <!--</style>-->
+    <!--<style name="AppTheme" parent="AppTheme.Base"></style>-->
+<!--</resources>-->
+

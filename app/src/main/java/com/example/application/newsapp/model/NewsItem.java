@@ -16,8 +16,7 @@ public class NewsItem {
     private String urlToImage;
     private String publishedAt;
 
-    public NewsItem(String source, String author, String title, String description, String url, String urlToImage, String publishedAt) {
-        this.source = source;
+    public NewsItem( String author, String title, String description, String url, String urlToImage, String publishedAt) {
         this.author = author;
         this.title = title;
         this.description = description;
@@ -25,6 +24,7 @@ public class NewsItem {
         this.urlToImage = urlToImage;
         this.publishedAt = publishedAt;
     }
+
 
     public String getSource() {
         return source;

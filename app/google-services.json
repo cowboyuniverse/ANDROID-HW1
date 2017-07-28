@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "854851040443",
+    "firebase_url": "https://androiddb-f6303.firebaseio.com",
+    "project_id": "androiddb-f6303",
+    "storage_bucket": "androiddb-f6303.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854851040443:android:806a306d0233d9ed",
+        "android_client_info": {
+          "package_name": "com.android.summer.csula.foodvoter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854851040443-lsce2icjkh07nm2goo4car808fhsm4kd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4oFHJfp-7sRYD-IxikQ-ggpR-R3-bB3Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854851040443:android:b38d16ea9d917eb2",
+        "android_client_info": {
+          "package_name": "com.example.application.newsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854851040443-lsce2icjkh07nm2goo4car808fhsm4kd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4oFHJfp-7sRYD-IxikQ-ggpR-R3-bB3Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

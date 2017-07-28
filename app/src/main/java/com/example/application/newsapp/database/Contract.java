@@ -6,7 +6,7 @@ import android.provider.BaseColumns;
  * Created by cowboyuniverse on 7/25/17.
  */
 
-
+//     This is the sql table representation formed as an object class within java
 //     HW4 DONE TODO 3) 10pts: Create a contract, subclass SQLiteOpenHelper, modify your app so that your network call stores the data for your news stories in the database (you decide column and table names).
 
 public class Contract {
@@ -18,7 +18,7 @@ public class Contract {
         public static final String COLUMN_NAME_DESCRIPTION = "description";
         public static final String COLUMN_NAME_URL = "url";
         public static final String COLUMN_NAME_URL_TO_IMAGE = "urlToImage";
-        public static final String OLUMN_NAME_PUBLISHED_AT = "publishedAt";
+        public static final String COLUMN_NAME_PUBLISHED_AT = "publishedAt";
     }
 }
 
